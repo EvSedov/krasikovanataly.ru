@@ -1,0 +1,7 @@
+mixin header(text = '')
+    header.mb-4
+        if block
+            block
+        else
+            a.navbar-brand(href=`${href}` class=`${classes}`)
+                h1= text

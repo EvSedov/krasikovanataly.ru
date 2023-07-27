@@ -1,0 +1,7 @@
+mixin section(title = '', idTitle='')
+    section.section.pb-4(id = idTitle)
+        .container-fluid
+            .row
+                h3= title
+                if block
+                    block

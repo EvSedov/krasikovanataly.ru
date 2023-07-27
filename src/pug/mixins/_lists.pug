@@ -1,0 +1,37 @@
+mixin list-group(lines = [], paragraths = [], className = '', listWidth = '')
+    ul(class=`list-group ${className}`)
+        each line in lines
+            - 
+                var boldLine = line[0]
+                var midleLine = line[1]
+            li(class=`list-group-item ${listWidth}`) 
+                span.fw-bold !{boldLine}
+                |
+                | !{midleLine}
+    if paragraths.length
+        each text in paragraths
+            -
+                var boldText = text[0]
+                var midleText = text[1]
+            p.text-justify.lh-sm
+                span.fw-bold !{boldText}
+                |
+                | !{midleText}
+
+mixin list-group-horizontal(lines = [], paragraths = [], className = '')
+    ul(class=`list-group list-group-horizontal ${className}`)
+        each line in lines
+            - 
+                var firstLine = line[0]
+                var secondLine = line[1]
+            li(class=`list-group-item w-50`)= firstLine
+            li(class=`list-group-item w-50`)= secondLine    
+    if paragraths.length
+        each text in paragraths
+            -
+                var boldText = text[0]
+                var midleText = text[1]
+            p.text-justify.lh-sm
+                span.fw-bold !{boldText}
+                |
+                | !{midleText}

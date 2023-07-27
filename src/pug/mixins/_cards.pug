@@ -1,0 +1,24 @@
+mixin card(title = '', text = '')
+    .card
+        block body
+            .card-body
+                h5.card-title= title
+                p.card-text= text
+
+mixin card-title(title = '', subtitle = '', paragraphs = [], className='no-border text-dark')
+    div(class= `card ${className}`)
+        .card-body
+            if title !== ''
+                h4.card-title.mb-4= title
+            if subtitle !== ''
+                h5.card-subtitle.text-muted.mb-3= subtitle
+            each val in paragraphs
+                -
+                    var boldText = val[0]
+                    var text = val[1]
+                p.card-text.text-justify.lh-sm
+                    span.fw-bold !{boldText}
+                    |
+                    | !{text}
+            if block
+                block
