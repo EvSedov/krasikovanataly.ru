@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://./src/styles/_style.scss"],"names":[],"mappings":"AAAA,WACI,sBAAA,CAGJ,cACI,6BAAA","sourcesContent":[".no-border {\r\n    border: none !important;\r\n}\r\n\r\n.text-justify {\r\n    text-align: justify !important;\r\n}"],"sourceRoot":""}
