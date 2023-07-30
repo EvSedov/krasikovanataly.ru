@@ -36,6 +36,7 @@ module.exports = {
     devtool: 'source-map',
     entry: {
         index: './src/pug/pages/index.pug',
+        license: './src/pug/pages/license.pug'
     },
     plugins: [
         new PugPlugin({

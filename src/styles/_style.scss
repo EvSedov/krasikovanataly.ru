@@ -1,3 +1,26 @@
+html{
+    height: 100% !important;
+}
+body{
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+}
+
+header{
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 0 0 auto !important;
+}
+
+ main {
+    /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 1 0 auto !important;
+ }
+ footer{
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 0 0 auto !important;
+ }
+
 .no-border {
     border: none !important;
 }
