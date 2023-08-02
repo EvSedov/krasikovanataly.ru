@@ -61,8 +61,18 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif|pdf)$/i,
+                test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
                 type: 'asset/resource',
+                generator: {
+                    filename: 'assets/img/[name].[hash:8][ext]',
+                },
+            },
+            {
+                test: /\.(pdf)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/docs/[name].[hash:8][ext]',
+                },
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
