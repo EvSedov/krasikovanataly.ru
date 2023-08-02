@@ -4,18 +4,19 @@ block variables
     -   var footItems_1 = [{'Центр по реабилитации и коррекции речи ИП Красикова Н.Н.': 'index.html'}, {'Сведения об образовательной организации': 'license.html'}]
 
 block content
-    header.py-3.mb-4.border-bottom.bg-info-subtle
+    header.py-3.border-bottom
         .container.d-flex.flex-wrap.justify-content-center
             a.d-flex.align-items-center.mb-3.mb-md-0.me-md-auto.text-dark.text-decoration-none(href='index.html')
+                img.d-block.mx-auto.me-2(src='../../assets/img/logo.jpg' alt='Логотип Центр по реабилитации и коррекции речи' width='50' height='50')
                 span.fs-6.fw-bold Центр по реабилитации и коррекции речи
             ul.nav.nav-pills
                 li.nav-item
-                    a.nav-link(href='index.html' aria-current='page') Главная
+                    a.nav-link.fw-semibold(href='index.html' aria-current='page') Главная
                 li.nav-item
-                    a.nav-link.active(href='#') Сведения об организации
+                    a.nav-link.fw-semibold.active(href='#') Сведения об организации
 
     main
-        .container.mb-4
+        .container.my-4
             h2.fw-bold.ms-3 Сведения об образовательной организации
 
             +section('1. Раздел «Основные сведения»', 'base')
@@ -42,8 +43,8 @@ block content
                             +link_download('Правила внутреннего трудового распорядка', 'Правила внутреннего трудового распорядка.pdf')
                         li.list-group-item
                             +link_download('Правила приема обучающихся', 'Правила приема обучающихся.pdf')
-                        li.list-group-item Режим занятий обучающихся
-                            //- +link_download('', '')
+                        li.list-group-item 
+                            +link_download('Режим занятий обучающихся', 'Режим занятий.pdf')
                         li.list-group-item
                             +link_download('Формы, периодичность и порядок текущего контроля успеваемости и промежуточной аттестации обучающихся', 'О формах, текущем контроле.pdf')
                         li.list-group-item
@@ -156,7 +157,7 @@ block content
                     ['', 'ИП Красикова Н.Н. не имеет заключенных и планируемых к заключению договоров с иностранными и (или)международными организациями по вопросам образования и науки, образовательных программ, имеющихмеждународную аккредитацию.']
                 ])
 
-    footer.py-3.my-4.border-top.bg-primary
+    footer.py-3.border-top
         .container
             .col.d-flex.flex-wrap.justify-content-between.align-items-center.border-bottom.pb-3
                 span.mb-3.mb-md-0.text-light © 2023 ИП Красикова Н.Н.&nbsp;&nbsp;&nbsp;

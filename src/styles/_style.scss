@@ -10,15 +10,25 @@ body{
 header{
     /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
     flex: 0 0 auto !important;
+    background-color: #b463cc !important;
 }
 
- main {
+main {
     /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
     flex: 1 0 auto !important;
+}
+
+main,
+.card,
+th,
+.list-group-item {
+    background-color: #f3e7f9 !important;
  }
+
  footer{
     /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
     flex: 0 0 auto !important;
+    background-color: #54306b !important;
  }
 
 .no-border {
@@ -27,4 +37,17 @@ header{
 
 .text-justify {
     text-align: justify !important;
+}
+
+.nav a.nav-link {
+    color: #54306b !important;
+}
+
+.nav a.active {
+    background-color: #54306b !important;
+    color: #fde4f9 !important;
+}
+
+h1, h2, h3 {
+    color: #501872 !important;
 }

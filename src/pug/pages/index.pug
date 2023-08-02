@@ -4,18 +4,20 @@ extends ../layout/_layout
 //-     -   var footItems_1 = [{'Центр по реабилитации и коррекции речи ИП Красикова Н.Н.': '#base'}]
 
 block content
-        header.py-3.mb-4.border-bottom.bg-info-subtle
+        header.py-3.border-bottom
             .container.d-flex.flex-wrap.justify-content-center
                 a.d-flex.align-items-center.mb-3.mb-md-0.me-md-auto.text-dark.text-decoration-none(href='#')
+                    img.d-block.mx-auto.me-2(src='../../assets/img/logo.jpg' alt='Логотип Центр по реабилитации и коррекции речи' width='50' height='50')
                     span.fs-6.fw-bold Центр по реабилитации и коррекции речи
                 ul.nav.nav-pills
                     li.nav-item
-                        a.nav-link.active(href='#' aria-current='page') Главная
+                        a.nav-link.fw-semibold.active(href='#' aria-current='page') Главная
                     li.nav-item
-                        a.nav-link(href='license.html') Сведения об организации
+                        a.nav-link.fw-semibold(href='license.html') Сведения об организации
         main
             .px-4.py-5.my-5.text-center
-                h1.display-6.fw-bold.text-body-emphasis.mb-3
+                img.d-block.mx-auto.mb-4(src='../../assets/img/logo.jpg' alt='Логотип Центр по реабилитации и коррекции речи' width='72' height='72')
+                h1.display-6.fw-bold.mb-3
                     | Центр по реабилитации
                     br
                     | и коррекции речи ИП Красикова Н.Н.
@@ -32,13 +34,13 @@ block content
                         | Огромное количество пособий, игр и материалов позволяют проводить интересные для детей занятия.
                         | Проводится регулярная дезинфекция всех инструментов, игр и помещений.
                         | У нас всегда чисто, уютно и интересно детям!
-                    p.fs-5.fw-bold Мы находимся по адресу:
+                    h2.fs-5.fw-bold Мы находимся по адресу:
                     ul.list-group.list-group-flush
-                        li.list-group-item ‌г. Краснодар, ул. Российская 74/3
+                        li.list-group-item.fw-semibold ‌г. Краснодар, ул. Российская 74/3
                         li.list-group-item 
-                            a.link-primary.link-offset-2.link-offset-3-hover.link-underline.link-underline-light.link-underline-opacity-0.link-underline-opacity-75-hover(href='tel: +79654728686' aria-current='page') тел. +7 (965) 472-86-86 
+                            a.link-primary.link-offset-2.link-offset-3-hover.link-underline.link-underline-light.link-underline-opacity-0.link-underline-opacity-75-hover.fw-semibold(href='tel: +79654728686' aria-current='page') тел. +7 (965) 472-86-86 
 
-        footer.py-3.my-4.border-top.bg-primary
+        footer.py-3.border-top
             .container
                 .col.d-flex.flex-wrap.justify-content-between.align-items-center.border-bottom.pb-3
                     span.mb-3.mb-md-0.text-light © 2023 ИП Красикова Н.Н.&nbsp;&nbsp;&nbsp;
