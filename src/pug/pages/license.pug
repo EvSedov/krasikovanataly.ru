@@ -178,16 +178,14 @@ block content
                 ])
 
             +section('10. Раздел «Платные образовательные услуги»')
-                +card-title('', '', [
-                    ['', 'Раздел уточняется.']
-                ])
-                // Удаляем документы из раздела
-                // .card.no-border.text-dark
-                //     ul.list-group.list-group-flush
-                //         li.list-group-item 
-                //             +link_download('Образец договора об оказании платных образовательных услуг', 'Contract_with_students_april_2023.pdf')
-                //         li.list-group-item 
-                //             +link_download('Приказ об утверждении стоимости обучения по каждой образовательной программе', 'The_order_on_the_approval_of the_cost_of_educational_programs.pdf')
+                .card.no-border.text-dark
+                    ul.list-group.list-group-flush.list-group-numbered
+                        li.list-group-item 
+                           +link_download('Положение о порядке оказания платных образовательных услуг', '../../assets/docs/paid_educational_services/15_Положение_о_порядке_оказания_платных_образовательных_услуг_штамп.pdf')
+                        li.list-group-item 
+                           +link_download('Приказ об утверждении стоимости обучения по образовательным программам', '../../assets/docs/paid_educational_services/19_Приказ_5_об_утверждении_стоимости_обучения_по_образовательным_программам_штамп.pdf')
+                        li.list-group-item 
+                           +link_download('Образец договора об оказании платных образовательных услуг', '../../assets/docs/paid_educational_services/Образец_договора_об_оказании_платных_образовательных_услуг.pdf')
 
             +section('11. Раздел «Финансово-хозяйственная деятельность»')
                 +card-title('', '', [
